@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>계산기</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="calculator">
+      <header class="calculator-header">
+        <div class="calculator-header-buttons">
+          <div
+            class="calculator-header__button calculator-header__button--red"
+          ></div>
+          <div
+            class="calculator-header__button calculator-header__button--yellow"
+          ></div>
+          <div
+            class="calculator-header__button calculator-header__button--green"
+          ></div>
+        </div>
+
+        <div id="display" class="calculator-display">
+          <span id="result" class="calculator-display__prev-value">0</span>
+          <span id="expression" class="calculator-display__curr-value">0</span>
+        </div>
+      </header>
+      <div class="calculator-buttons">
+        <button
+          id="clear-button"
+          class="calculator-buttons__button calculator-buttons__button--function"
+        >
+          C
+        </button>
+        <button
+          id="left-parentheses"
+          class="calculator-buttons__button calculator-buttons__button--function"
+        >
+          (
+        </button>
+        <button
+          id="right-parentheses"
+          class="calculator-buttons__button calculator-buttons__button--function"
+        >
+          )
+        </button>
+        <button
+          class="calculator-buttons__button calculator-buttons__button--operator operator"
+        >
+          /
+        </button>
+        <button
+          class="calculator-buttons__button calculator-buttons__button--number"
+        >
+          7
+        </button>
+        <button
+          class="calculator-buttons__button calculator-buttons__button--number"
+        >
+          8
+        </button>
+        <button
+          class="calculator-buttons__button calculator-buttons__button--number"
+        >
+          9
+        </button>
+        <button
+          class="calculator-buttons__button calculator-buttons__button--operator operator"
+        >
+          *
+        </button>
+        <button
+          class="calculator-buttons__button calculator-buttons__button--number"
+        >
+          4
+        </button>
+        <button
+          class="calculator-buttons__button calculator-buttons__button--number"
+        >
+          5
+        </button>
+        <button
+          class="calculator-buttons__button calculator-buttons__button--number"
+        >
+          6
+        </button>
+        <button
+          class="calculator-buttons__button calculator-buttons__button--operator operator"
+        >
+          -
+        </button>
+        <button
+          class="calculator-buttons__button calculator-buttons__button--number"
+        >
+          1
+        </button>
+        <button
+          class="calculator-buttons__button calculator-buttons__button--number"
+        >
+          2
+        </button>
+        <button
+          class="calculator-buttons__button calculator-buttons__button--number"
+        >
+          3
+        </button>
+        <button
+          class="calculator-buttons__button calculator-buttons__button--operator operator"
+        >
+          +
+        </button>
+        <button
+          class="calculator-buttons__button calculator-buttons__button--zero calculator-buttons__button--number"
+        >
+          0
+        </button>
+        <button
+          id="dot-button"
+          class="calculator-buttons__button calculator-buttons__button--number"
+        >
+          .
+        </button>
+        <button
+          class="calculator-buttons__button calculator-buttons__button--operator operator"
+        >
+          =
+        </button>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,140 @@
+/* 모든 요소의 기본 여백 제거 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* HTML과 Body의 기본 설정 */
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator {
+  border: 1px solid black;
+
+  border-radius: 10px;
+
+  width: 400px;
+  height: 625px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  overflow: hidden;
+}
+
+.calculator-header {
+  padding: 10px 5px 0px 5px;
+
+  width: 100%;
+
+  background-color: rgb(37, 37, 37);
+}
+
+.calculator-header-buttons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.calculator-header__button {
+  height: 18px;
+  width: 18px;
+  border-radius: 100%;
+  margin-right: 8px;
+}
+
+.calculator-header__button:hover {
+  cursor: pointer;
+  filter: brightness(0.85);
+}
+
+.calculator-header__button--red {
+  background-color: red;
+}
+
+.calculator-header__button--yellow {
+  background-color: rgb(241, 222, 17);
+}
+
+.calculator-header__button--green {
+  background-color: rgb(78, 198, 78);
+}
+
+.calculator-display {
+  width: 100%;
+
+  padding: 10px;
+
+  display: flex;
+
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.calculator-display__curr-value {
+  color: whitesmoke;
+
+  font-size: 2.3rem;
+}
+
+.calculator-display__prev-value {
+  color: rgb(200, 200, 200);
+  font-size: 1.8rem;
+}
+
+.calculator-buttons {
+  flex: 1;
+
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(5, 100px);
+}
+
+.calculator-buttons__button {
+  border: 0.5px solid rgb(220, 220, 220);
+
+  background-color: white;
+
+  font-size: 1.5rem;
+
+  box-sizing: border-box;
+}
+
+.calculator-buttons__button:hover {
+  cursor: pointer;
+  filter: brightness(1.05);
+}
+
+.calculator-buttons__button--number:hover {
+  background-color: rgb(230, 230, 230);
+}
+
+.calculator-buttons__button:active {
+  filter: brightness(0.9);
+}
+
+.calculator-buttons__button--zero {
+  grid-column: span 2;
+}
+
+.calculator-buttons__button--operator {
+  color: whitesmoke;
+  background-color: orange;
+}
+
+.calculator-buttons__button--function {
+  background-color: rgb(200, 200, 200);
+}
