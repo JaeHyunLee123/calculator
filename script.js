@@ -121,6 +121,8 @@ const isValidOperatorAndOperandPair = (expression) => {
     }
   }
 
+  if (operatorCount < 1) return false;
+
   return true;
 };
 
@@ -289,3 +291,4 @@ buttons.forEach((button) => {
     }
   });
 });
+//console.log(convertExpressionStringToExpressionArray("(78 - 9) * 9)"));
